@@ -1,0 +1,92 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="dashboard-header">
+
+    <h1>Security Dashboard</h1>
+
+    <p>
+        Welcome back, {{ username }}
+    </p>
+
+</div>
+
+<div class="dashboard-grid">
+
+    <div class="dashboard-card">
+
+        <h3>Authentication Status</h3>
+
+        <p>Secure Session Active</p>
+
+    </div>
+
+    <div class="dashboard-card">
+
+        <h3>Password Protection</h3>
+
+        <p>bcrypt Encryption Enabled</p>
+
+    </div>
+
+    <div class="dashboard-card">
+
+        <h3>Threat Protection</h3>
+
+        <p>SQL Injection Prevention Active</p>
+
+    </div>
+
+    <div class="dashboard-card">
+
+        <h3>User Account</h3>
+
+        <p>{{ username }}</p>
+
+    </div>
+
+    <div class="dashboard-card">
+
+        <h3>Email Address</h3>
+
+        <p>{{ email }}</p>
+
+    </div>
+
+    <div class="dashboard-card">
+
+        <h3>Account Created</h3>
+
+        <p>{{ created_at }}</p>
+
+    </div>
+
+</div>
+
+<div class="security-panel">
+
+    <h2>Security Monitoring</h2>
+
+    <div class="monitor-grid">
+
+        <div class="monitor-card">
+            <h3>Firewall Status</h3>
+            <p>Protected</p>
+        </div>
+
+        <div class="monitor-card">
+            <h3>Authentication Layer</h3>
+            <p>Active</p>
+        </div>
+
+        <div class="monitor-card">
+            <h3>Session Encryption</h3>
+            <p>Enabled</p>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

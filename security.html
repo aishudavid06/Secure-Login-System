@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="security-page">
+
+    <h1>Security Settings</h1>
+
+    <div class="security-grid">
+
+        <div class="security-card">
+
+            <h3>Password Security</h3>
+
+            <p>
+                Passwords are hashed using bcrypt encryption before database storage.
+            </p>
+
+        </div>
+
+        <div class="security-card">
+
+            <h3>Session Management</h3>
+
+            <p>
+                Active session protection prevents unauthorized dashboard access.
+            </p>
+
+        </div>
+
+        <div class="security-card">
+
+            <h3>Database Security</h3>
+
+            <p>
+                Parameterized SQL queries prevent SQL injection attacks.
+            </p>
+
+        </div>
+
+        <div class="security-card">
+
+            <h3>Two-Factor Authentication</h3>
+
+            <p>
+                Optional 2FA module can be integrated for additional account security.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

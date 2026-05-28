@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="hero">
+
+    <h1>Secure Login Authentication Platform</h1>
+
+    <p>
+        Advanced cybersecurity-focused authentication system with secure password hashing,
+        session management, SQL injection prevention, and protected user access control.
+    </p>
+
+    <div class="hero-buttons">
+
+        <a href="/register">
+            <button>Create Account</button>
+        </a>
+
+        <a href="/login">
+            <button class="secondary-btn">Login</button>
+        </a>
+
+    </div>
+
+</div>
+
+<div class="features">
+
+    <div class="feature-card">
+
+        <h3>Password Encryption</h3>
+
+        <p>
+            User passwords are securely hashed using bcrypt encryption before storage.
+        </p>
+
+    </div>
+
+    <div class="feature-card">
+
+        <h3>SQL Injection Protection</h3>
+
+        <p>
+            Parameterized database queries protect the application against SQL injection attacks.
+        </p>
+
+    </div>
+
+    <div class="feature-card">
+
+        <h3>Session Security</h3>
+
+        <p>
+            Secure session management prevents unauthorized access to protected pages.
+        </p>
+
+    </div>
+
+</div>
+
+{% endblock %}
